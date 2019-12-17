@@ -1,0 +1,25 @@
+{% extends "base_generic.html"%}
+
+{% block content %}
+<div class="page-container float-right">
+    <div class="row">
+        <div class="col-md-6">
+
+            <h1> SolicitudEmpresa: {{ SolicitudEmpresa }}</h1>
+            <p>
+                {{ SolicitudEmpresa.nombreEmp }}
+                {{ SolicitudEmpresa.email }}
+                {{ SolicitudEmpresa.direccion }}
+
+
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "base_generic.html"%}
+
+{% block content %}
+
+<div class="page-container float-right">
+    <div class="row">
+        <div class="col-md-6">
+            <section>
+                <div>
+                    <h2>Eliminar Solicitud</h2>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        Seguro que quieres eliminar esta Solicitud: {{ SolicitudEmpresa.nombreEmp }}
+
+                    </p>
+
+                    <form action="" method="POST">
+
+                        {% csrf_token %}
+                        <table>
+
+                            {{form.as_table}}
+                        </table>
+                        <input type="submit" value="Si, borralo">
+
+                    </form>
+
+
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}

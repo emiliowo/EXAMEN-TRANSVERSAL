@@ -1,0 +1,36 @@
+{% extends "base_generic.html"%}
+
+{% block content %}
+
+<div class="page-container float-right">
+    <div class="row">
+        <div class="col-md-6">
+            <section>
+                <div>
+                    <h2> Solicitud </h2>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <form action="" method="POST">
+
+                        {% csrf_token %}
+                        <table>
+
+                            {{form.as_table}}
+                        </table>
+                        <input type="submit" value="Submit">
+
+                    </form>
+
+
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
