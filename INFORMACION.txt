@@ -1,0 +1,9 @@
+Super usuario: Nombre: Emilio
+		pass: 12345
+
+Usuario normal: ElPruebas
+		pass: pongameun7profeuwu
+
+Emilio Vera Seccion 007D
+
+Usuario Github: emiliowo
